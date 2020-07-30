@@ -1,3 +1,10 @@
 module.exports = {
-  preset: '@vue/cli-plugin-unit-jest/presets/typescript-and-babel'
+    preset: '@vue/cli-plugin-unit-jest/presets/typescript-and-babel',
+    testMatch: [
+        "**/__tests__/**/*.[jt]s?(x)",
+        "**/?(*.)+(spec|test).[jt]s?(x)"
+    ],
+    moduleNameMapper: {
+        "\\.(css|sass)$": "identity-obj-proxy",
+    },
 }
