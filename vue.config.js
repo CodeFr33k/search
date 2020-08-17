@@ -1,7 +1,9 @@
 const path = require('path');
 
 module.exports = {
-    publicPath: '/search/',
+    publicPath: process.env.NODE_ENV === 'production'
+    ? '/search/'
+    : '/',
     configureWebpack: {
         resolve: {
             alias: {
