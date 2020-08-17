@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import App from './App.vue'
-import store from '../github.com/caml-js/store';
+import store from 'caml-js/store';
 
 const searchParams = new URLSearchParams(window.location.search as string);
 const uri = searchParams.get('manifest');
